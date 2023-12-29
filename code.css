@@ -1,0 +1,178 @@
+/* ==UserStyle==
+@name         AniList custom css
+@namespace    github.com/acholthitchanta/anilist-custom-css
+@version      2.1
+@description  custom theme for AniList
+@author       acholthitchanta
+@homepageURL  https://github.com/acholthitchanta/anilist-custom-css
+@supportURL   https://github.com/acholthitchanta/anilist-custom-css/issues
+@updateURL    https://github.com/acholthitchanta/anilist-custom-css/raw/main/anilist-custom-css.user.css
+==/UserStyle== */
+
+/* Background image (change the URL to change the image) */
+body {
+    background: rgb(var(--color-background)) url("https://i.postimg.cc/FsZv3Rtd/img-httpsi-imgur-comg-POZu-JR-png-img-httpsi-imgur-com6y-Hkt-I6-png-img-httpsi-imgur-comh-Y3wbrb-png-i.png") center/100% fixed;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+/* name tag */
+.name[data-v-4f7beb35]::after {
+    content: "boba enjoyer";
+    position: relative;
+    top: -3px;
+    left: 10px;
+    background: rgb(124, 165, 207);
+    border-radius: 4px;
+    color: rgba(255, 255, 255);
+    padding: 5px 5px;
+    margin-bottom: 20px;
+    margin-right: 16px;
+    font-size: 1.2rem;
+    animation: rainbow 10s infinite linear;
+      animation-duration: 10s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-fill-mode: none;
+      animation-play-state: running;
+      animation-name: rainbow;
+}
+
+/* avatar animation */
+.avatar:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    transform-style: preserve-3d;
+}
+
+/* name animation */
+.name:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    transform-style: preserve-3d;
+}
+
+/* favorites animation */
+.favourite:hover {
+    transition: 0s;
+    transform: scale(1.2);
+    transform-style: preserve-3d;
+}
+
+/* color scheme */
+.site-theme-dark {
+    --color-background: 26, 21, 12;
+    --color-foreground: 26, 21, 12, 0.8;
+    --color-foreground-blue: 26, 21, 12;
+    --color-background-100: 26, 21, 12;
+    --color-background-200: 26, 21, 12;
+    --color-gray-700: 158, 131, 79;
+    --color-gray-600: 158, 131, 79;
+    --color-gray-100: 26, 21, 12;
+    --color-foreground-grey: 26, 21, 12;
+    --color-foreground-grey-dark: 26, 21, 12;
+    --color-text: 255, 255, 255;
+    --color-text-light: 255, 255, 255;
+    --color-text-lighter: 255, 255, 255;
+    --color-background: linear-gradient(45deg, #2D3745 0%, #1C2026 65%);
+}
+
+/* header option colors */
+.site-theme-dark .nav-unscoped {
+  background: rgba(26, 21,12);
+  color: 255, 255, 255;
+}
+
+.site-theme-dark .nav-unscoped.transparent {
+    background: rgba(26, 21,12,.5);
+}
+
+.site-theme-dark .nav-unscoped.transparent:hover {
+    background: rgba(26, 21,12);
+    color: white;
+}    
+
+
+/* stat value font size */
+.stat .value[data-v-815ccddc] {
+    font-size: 1.5rem;
+}
+
+
+.markdown .markdown-spoiler.spoiler-visible .hide-spoiler, .markdown .markdown- spoiler.spoiler-visible span {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* anilist home button logo (change the URL to change the image) */
+.logo img[data-v-4fbac4e1] {
+    content: url("https://i.postimg.cc/gJ9pGtVz/sushi.png");
+}
+
+/* site fonts */
+html, body {
+    font-family: Overpass, sans-serif !important;
+}
+
+/* long bio stretching */
+.about .content-wrap[data-v-5c30286e] {
+    max-height: 2000px;
+    max-width: 700px;
+    overflow: shown;
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.nav .link[data-v-4f7beb35] {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 15px;
+}
+
+.nav[data-v-4f7beb35] {
+    font-size: 1.4rem;
+    max-width: 1220px;
+    text-align: center;
+}
+
+.overview[data-v-5c30286e] .content-wrap {
+    background: rgb(var(--color-foreground));
+    border-radius: 5px;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+.overview .wrap, .overview .content-wrap, .activity-replies > .reply {
+    border: 2px solid rgb(158, 131, 79);
+    border-radius: 5px;
+}
+
+/* custom scrollbar colors and stuff */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(242, 191, 61);
+    border-radius: 15px;
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgba(26,21,12);
+    width: 5px;
+}
+
+.header-wrap, .list-stats, .load-more, .stat .label, .time, .actions, textarea, .section-header {
+    font-family: Overpass, "Noto Sans" !important;
+}
+
+/* stats column seperation */
+.stats-wrap[data-v-5c30286e] {
+    grid-column-gap: 5px;
+}
